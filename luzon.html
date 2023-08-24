@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelGuide-Luzon</title>
+    <link rel="shortcut icon" href="travel5.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand" href="index.html">
+            <img src="travel5.png" alt="" height="60px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About Luzon</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Places
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="#">Luzon</a></li>
+                  <li>
+                    <a class="dropdown-item" href="visayas.html">Visayas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mindanao.html">Mindanao</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning me-3" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div class="d-grid gap-2 d-md-flex justify-content-sm-center">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop1"
+              >
+                <i class="fa-solid fa-right-to-bracket fa-sm"></i>
+                Log In
+              </button>
+              <div
+                class="modal fade"
+                id="staticBackdrop1"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Log in to account
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="floatingtext"
+                          placeholder="Username"
+                        />
+                        <label for="floatingtext">Username</label>
+                      </div>
+
+                      <div class="form-floating">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="floatingPassword"
+                          placeholder="Password"
+                        />
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Log in
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2"
+              >
+                Sign Up
+              </button>
+              <div
+                class="modal fade"
+                id="staticBackdrop2"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Create an account
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="floatingtext"
+                          placeholder="Username"
+                        />
+                        <label for="floatingtext">Username</label>
+                      </div>
+                      <div class="form-floating">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="floatingPassword"
+                          placeholder="Password"
+                        />
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Create an account
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <div class="ms-3">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <img src="luzonpic.png" alt="sample image" height="300px" />
+              </div>
+              <div class="col">
+                <h1>About Luzon</h1>
+                <p>
+                  Luzon is the largest and most economically important island of
+                  the Philippines. It is home to more than half of the Filipino
+                  population and the site of Manila, the nation's capital and
+                  major metropolis. Luzon is part of the Philippine Mobile Belt,
+                  a fast deforming plate boundary zone between two opposing
+                  subduction zones. Luzon has many tourist attractions, such as
+                  beaches, volcanoes, historical sites, and natural parks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="places">
+        <h1>Places to visit in Luzon</h1>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="undergroundriver.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Underground River</h5>
+                        <p class="card-text">
+                          Puerto Princesa Underground River is a UNESCO World
+                          Heritage Site in Palawan, Philippines. It is one of
+                          the longest navigable subterranean rivers in the
+                          world. It features stunning rock formations, diverse
+                          wildlife, and a cathedral-like cave. A must-see
+                          natural wonder
+                        </p>
+                        <p>
+                          Location: Sitio Sabang, Bgy. Cabayugan, Puerto
+                          Princesa City
+                        </p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img src="mt.mayon.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Mt. Mayon</h5>
+                        <p class="card-text">
+                          Mayon Volcano is an active stratovolcano in Albay,
+                          Philippines. It is known for its perfect cone shape
+                          and symmetrical slopes. It offers scenic views, hiking
+                          trails, and cultural heritage. It is one of the most
+                          iconic landmarks and tourist attractions in the
+                          country
+                        </p>
+                        <p>Location: Province of Albay</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="rice terraces.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Banaue Rice Terraces</h5>
+                        <p class="card-text">
+                          Sanaue Rice Terraces are ancient terraces carved into
+                          the mountains of Ifugao by the Igorot people. They are
+                          a UNESCO World Heritage Site and a marvel of
+                          engineering and culture. They offer stunning views,
+                          cultural immersion, and eco-tourism
+                        </p>
+                        <p>Location: In the mountains of Ifugao</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="pagsanjanfalls.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Pagsanjan Falls</h5>
+                        <p class="card-text">
+                          Pagsanjan Falls is a stunning waterfall in Laguna,
+                          Philippines. It is famous for its thrilling boat ride,
+                          known as shooting the rapids, that takes visitors
+                          through the gorge and to the falls. It is also a
+                          historical and cultural site, as it was featured in
+                          the movie Apocalypse Now.
+                        </p>
+                        <p>Location: Laguna Philippines</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img src="vigan.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Historic City of Vigan</h5>
+                        <p class="card-text">
+                          The historic city of Vigan is a UNESCO World Heritage
+                          Site in the Philippines. It showcases the fusion of
+                          Philippine, Chinese, and European cultures in its
+                          architecture, cuisine, and crafts. It is famous for
+                          its cobblestone streets, ancestral houses, churches,
+                          museums, and pottery
+                        </p>
+                        <p>Location: Vigan, Ilocos Sur</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="kayanganlake.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Kayangan Lake</h5>
+                        <p class="card-text">
+                          Kayangan Lake is a crystal-clear freshwater lake in
+                          Coron, Palawan. It is known as the cleanest lake in
+                          Asia and offers stunning views of the surrounding
+                          limestone cliffs and underwater rock formations. It is
+                          a popular spot for swimming, snorkeling, and
+                          photography.
+                        </p>
+                        <p>Location: Coron, Palawan</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="biglagoonelnido.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Big Lagoon</h5>
+                        <p class="card-text">
+                          Big Lagoon is a breathtaking natural wonder in El
+                          Nido, Palawan. It is a large body of turquoise water
+                          surrounded by towering limestone cliffs and lush
+                          vegetation. It is a perfect place for kayaking,
+                          snorkeling, or simply admiring the scenery
+                        </p>
+                        <p>Location: El Nido, Palawan</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img src="hondabay.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Honda Bay</h5>
+                        <p class="card-text">
+                          Honda Bay is a beautiful bay in Palawan, famous for
+                          its island-hopping tours. It has white sand beaches,
+                          clear blue waters, and colorful coral reefs. It is a
+                          great place to enjoy snorkeling, swimming, and
+                          relaxing in nature
+                        </p>
+                        <p>Location: Palawan</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-3">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="sabangbeach.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Sabang Beach</h5>
+                        <p class="card-text">
+                          Sabang Beach is a popular beach in Puerto Galera,
+                          known for its scuba diving sites and proximity to the
+                          Underground River. It has fine sand, clear water, and
+                          scenic views. It is a great place to enjoy nature,
+                          adventure, and relaxation
+                        </p>
+                        <p>Location: Puerto Galera</p>
+                        <a href="#" class="btn btn-outline-light">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Quick Links</h5>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#places">Places</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card mb-3" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title">Social Medias</h5>
+                  <ul>
+                    <li>
+                      <i class="fa-brands fa-facebook"></i>
+                      <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-instagram"></i
+                      ><a href="#"> Instagram</a>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-twitter"></i>
+                      <a href="#">Twitter / X</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <b>Subscribe to our newsletter</b>
+            <div class="form-floating mb-3 h-30">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <button type="button" class="btn btn-outline-warning">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>&copy; 2023 TravelGuide Philippines. All rights reserved</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

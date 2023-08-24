@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: rgb(0, 0, 0);
+  background-image: url("banaue.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  img {
+    border-radius: 20px;
+    box-shadow: 10px 20px 30px;
+    color: black;
+  }
+  h1 {
+    text-align: start;
+    color: white;
+  }
+  p {
+    text-align: start;
+    padding: 20px;
+    background-color: #28bb7b;
+    border-radius: 20px;
+  }
+}
+#places {
+  background-image: linear-gradient(
+    to right top,
+    #2cb526,
+    #29b73d,
+    #29b950,
+    #2cbb60,
+    #32bc6f,
+    #28bb7b,
+    #22b986,
+    #22b78f,
+    #10b197,
+    #0eaa9d,
+    #1ea3a0,
+    #2f9ca1
+  );
+  text-align: center;
+  padding: 3rem;
+
+  div {
+    .carouselExampleIndicators {
+      margin: auto;
+    }
+    .card {
+      background-color: rgb(51, 83, 50);
+      margin: auto;
+      color: white;
+    }
+  }
+
+  p {
+    text-align: start;
+  }
+}
+footer {
+  margin: auto;
+  padding: 30px;
+  background-color: gray;
+
+  .card {
+    border-style: none;
+    margin: auto;
+    background-color: transparent;
+  }
+
+  h5 {
+    text-align: start;
+  }
+  ul {
+    list-style: none;
+    text-align: start;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+
+      &:hover {
+        color: rgb(187, 183, 175);
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-size: small;
+  }
+}
