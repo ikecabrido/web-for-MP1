@@ -25,7 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-image: url("siargao.jpg");
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@ body {
 #about p {
   text-align: start;
   padding: 20px;
-  background-color: #28bb7b;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
 }
 

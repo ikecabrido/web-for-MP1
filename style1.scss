@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 nav {
-  .navbar {
+  .navlink {
     background-color: black;
   }
 }
@@ -73,11 +73,14 @@ nav {
     .card {
       background-color: rgb(104, 180, 102);
       margin: auto;
+      height: 470px;
+      box-shadow: 10px 10px 10px;
     }
   }
 
   p {
     text-align: start;
+    // height: 100%;
   }
 }
 #concerns {
